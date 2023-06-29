@@ -4,6 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Great Knowledge',
+  staticDirectories: ['public', 'static'],
   tagline: '🤠😎😴🧐',
   favicon: 'img/logo.png',
   url: 'https://main.pulsarforge.io',
@@ -56,7 +57,7 @@ const config = {
       navbar: {
         title: 'Main',
         logo: {
-          alt: 'Devs Labs',
+          alt: 'Web3 Labs',
           src: 'img/logo.png',
         },
         items: [
@@ -68,7 +69,17 @@ const config = {
           },
           {
             href: 'https://pulsarforge.io',
-            label: 'Devs Labs',
+            label: 'Web3 Labs',
+            position: 'right',
+          },
+          {
+            href: 'https://pulsarforge.substack.com/',
+            label: 'Newsletter',
+            position: 'right',
+          },
+          {
+            href: 'https://www.youtube.com/@pulsarforge',
+            label: 'Channel',
             position: 'right',
           },
           {
@@ -85,7 +96,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `🦦 © ${new Date().getFullYear()} PULSARFORGE ALL RIGHTS RESERVED`,
+        copyright: `© ${new Date().getFullYear()} Pulsarforge all rights reserved`,
       },
       prism: {
         theme: lightCodeTheme,

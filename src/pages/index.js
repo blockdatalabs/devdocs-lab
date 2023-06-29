@@ -18,17 +18,10 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="https://main.pulsarforge.io/docs/shipping">
-            Devs Docs
+              <img src='/img/devs-docs.png' alt='developer docs' style={{width: 700}}/>
           </Link>
         </div>
         <br />
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="https://pulsarforge.io/">
-            Devs Labs
-          </Link>
-        </div>
       </div>
     </header>
   );
@@ -39,7 +32,7 @@ export default function Home() {
   return (
     <Layout
       title={`Devs Docs`}
-      description="Devs Labs docs web3">
+      description="Web3 labs & devs docs">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
